@@ -65,6 +65,9 @@ npm install
 
 ```bash
 npm start
+
+electron ./build/main.js 失败，改为 electron . 后运行成功，猜测是打包有问题；
+（注意：先npm start，再改package.json中start命令；如果先改start命令，还是运行失败。）
 ```
 
 #### Building the production distribution
@@ -114,10 +117,10 @@ Apache 2. See the [LICENSE] file.
 Jitsi is built by a large community of developers, if you want to participate,
 please join [community forum].
 
-[Jitsi Meet]: https://github.com/jitsi/jitsi-meet
-[Electron]: https://electronjs.org/
+[jitsi meet]: https://github.com/jitsi/jitsi-meet
+[electron]: https://electronjs.org/
 [latest release]: https://github.com/jitsi/jitsi-meet-electron/releases/latest
 [jitsi-meet-electron-utils]: https://github.com/jitsi/jitsi-meet-electron-utils
-[jitsi-meet-electron-utils README]: https://github.com/jitsi/jitsi-meet-electron-utils/blob/master/README.md
+[jitsi-meet-electron-utils readme]: https://github.com/jitsi/jitsi-meet-electron-utils/blob/master/README.md
 [community forum]: https://community.jitsi.org/
-[LICENSE]: LICENSE
+[license]: LICENSE
